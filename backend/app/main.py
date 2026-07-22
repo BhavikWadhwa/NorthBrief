@@ -32,7 +32,7 @@ def run_startup_ingestion() -> None:
     try:
         latest_run = db.query(IngestionRun).order_by(IngestionRun.started_at.desc()).first()
         cutoff = datetime.now(UTC) - timedelta(minutes=settings.ingestion_startup_min_interval_minutes)
-        if latest_run and latest_run.started_at:
+        if latest_run and latest_run.status == "completed" and latest_run.started_at:
             started_at = latest_run.started_at
             if started_at.tzinfo is None:
                 started_at = started_at.replace(tzinfo=UTC)

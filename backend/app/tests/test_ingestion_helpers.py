@@ -1,5 +1,6 @@
 from app.services.ingestion.categorizer import detect_categories
 from app.services.ingestion.deduper import is_near_duplicate
+from app.services.ingestion.fetcher import MAX_ENTRIES_PER_SOURCE
 from app.services.ingestion.region_tagger import detect_regions
 
 
@@ -18,3 +19,6 @@ def test_near_duplicate_detection() -> None:
     existing = ["Bank of Canada holds rates steady as inflation cools"]
     assert is_near_duplicate("Bank of Canada holds rates steady as inflation cools", existing)
 
+
+def test_feed_entry_limit_is_bounded() -> None:
+    assert 1 <= MAX_ENTRIES_PER_SOURCE <= 100
