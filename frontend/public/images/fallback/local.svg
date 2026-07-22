@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f8a70"/>
+      <stop offset="100%" stop-color="#103c46"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <circle cx="930" cy="120" r="120" fill="#ffffff22"/>
+  <rect x="80" y="430" width="1040" height="120" rx="20" fill="#ffffff22"/>
+  <text x="80" y="220" fill="#ffffff" font-family="Arial, sans-serif" font-size="68" font-weight="700">Local Update</text>
+  <text x="80" y="290" fill="#d7f4ed" font-family="Arial, sans-serif" font-size="36">NorthBrief topic image</text>
+</svg>
+

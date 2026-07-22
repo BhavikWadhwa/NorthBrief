@@ -1,0 +1,164 @@
+{
+  "sources": [
+    {
+      "name": "CityNews Vancouver",
+      "source_type": "rss",
+      "feed_url": "https://vancouver.citynews.ca/feed/",
+      "site_url": "https://vancouver.citynews.ca",
+      "default_region_code": "ca-vancouver",
+      "default_category_code": "local",
+      "priority": 0.95,
+      "is_active": true
+    },
+    {
+      "name": "Vancouver Sun",
+      "source_type": "rss",
+      "feed_url": "https://vancouversun.com/feed/",
+      "site_url": "https://vancouversun.com",
+      "default_region_code": "ca-bc",
+      "default_category_code": "local",
+      "priority": 0.92,
+      "is_active": true
+    },
+    {
+      "name": "Calgary Herald",
+      "source_type": "rss",
+      "feed_url": "https://calgaryherald.com/feed/",
+      "site_url": "https://calgaryherald.com",
+      "default_region_code": "ca-ab",
+      "default_category_code": "local",
+      "priority": 0.9,
+      "is_active": true
+    },
+    {
+      "name": "Edmonton Journal",
+      "source_type": "rss",
+      "feed_url": "https://edmontonjournal.com/feed/",
+      "site_url": "https://edmontonjournal.com",
+      "default_region_code": "ca-ab",
+      "default_category_code": "local",
+      "priority": 0.88,
+      "is_active": true
+    },
+    {
+      "name": "Ottawa Citizen",
+      "source_type": "rss",
+      "feed_url": "https://ottawacitizen.com/feed/",
+      "site_url": "https://ottawacitizen.com",
+      "default_region_code": "ca-on",
+      "default_category_code": "local",
+      "priority": 0.9,
+      "is_active": true
+    },
+    {
+      "name": "CBC News",
+      "source_type": "rss",
+      "feed_url": "https://www.cbc.ca/webfeed/rss/rss-topstories",
+      "site_url": "https://www.cbc.ca",
+      "default_region_code": "ca",
+      "default_category_code": "canada",
+      "priority": 0.93,
+      "is_active": true
+    },
+    {
+      "name": "CTV News",
+      "source_type": "rss",
+      "feed_url": "https://www.ctvnews.ca/rss/ctvnews-ca-top-stories-public-rss-1.822009",
+      "site_url": "https://www.ctvnews.ca",
+      "default_region_code": "ca",
+      "default_category_code": "canada",
+      "priority": 0.9,
+      "is_active": true
+    },
+    {
+      "name": "Global News",
+      "source_type": "rss",
+      "feed_url": "https://globalnews.ca/feed/",
+      "site_url": "https://globalnews.ca",
+      "default_region_code": "ca",
+      "default_category_code": "canada",
+      "priority": 0.88,
+      "is_active": true
+    },
+    {
+      "name": "BNN Bloomberg",
+      "source_type": "rss",
+      "feed_url": "https://www.bnnbloomberg.ca/polopoly_fs/1.1139379.1532479157!/feed/rss.xml",
+      "site_url": "https://www.bnnbloomberg.ca",
+      "default_region_code": "ca",
+      "default_category_code": "finance",
+      "priority": 0.9,
+      "is_active": true
+    },
+    {
+      "name": "Reuters Business",
+      "source_type": "rss",
+      "feed_url": "https://feeds.reuters.com/reuters/businessNews",
+      "site_url": "https://www.reuters.com",
+      "default_region_code": "global",
+      "default_category_code": "global_finance",
+      "priority": 0.84,
+      "is_active": true
+    },
+    {
+      "name": "MarketWatch Top Stories",
+      "source_type": "rss",
+      "feed_url": "https://feeds.content.dowjones.io/public/rss/mw_topstories",
+      "site_url": "https://www.marketwatch.com",
+      "default_region_code": "global",
+      "default_category_code": "global_finance",
+      "priority": 0.8,
+      "is_active": true
+    },
+    {
+      "name": "BBC World",
+      "source_type": "rss",
+      "feed_url": "http://feeds.bbci.co.uk/news/world/rss.xml",
+      "site_url": "https://www.bbc.com",
+      "default_region_code": "global",
+      "default_category_code": "world",
+      "priority": 0.85,
+      "is_active": true
+    },
+    {
+      "name": "Reuters World",
+      "source_type": "rss",
+      "feed_url": "https://www.reutersagency.com/feed/?best-topics=world&post_type=best",
+      "site_url": "https://www.reuters.com",
+      "default_region_code": "global",
+      "default_category_code": "world",
+      "priority": 0.86,
+      "is_active": true
+    },
+    {
+      "name": "CNN World",
+      "source_type": "rss",
+      "feed_url": "http://rss.cnn.com/rss/edition_world.rss",
+      "site_url": "https://www.cnn.com",
+      "default_region_code": "global",
+      "default_category_code": "world",
+      "priority": 0.78,
+      "is_active": true
+    },
+    {
+      "name": "TechCrunch",
+      "source_type": "rss",
+      "feed_url": "https://techcrunch.com/feed/",
+      "site_url": "https://techcrunch.com",
+      "default_region_code": "global",
+      "default_category_code": "ai",
+      "priority": 0.82,
+      "is_active": true
+    },
+    {
+      "name": "The Verge",
+      "source_type": "rss",
+      "feed_url": "https://www.theverge.com/rss/index.xml",
+      "site_url": "https://www.theverge.com",
+      "default_region_code": "global",
+      "default_category_code": "ai",
+      "priority": 0.8,
+      "is_active": true
+    }
+  ]
+}

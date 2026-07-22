@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#311b92"/>
+      <stop offset="100%" stop-color="#00838f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <rect x="740" y="140" width="250" height="250" rx="26" fill="#ffffff22" stroke="#ffffff66" stroke-width="4"/>
+  <circle cx="805" cy="200" r="16" fill="#d8ffff"/>
+  <circle cx="925" cy="200" r="16" fill="#d8ffff"/>
+  <rect x="790" y="285" width="145" height="14" rx="7" fill="#d8ffff"/>
+  <text x="80" y="220" fill="#ffffff" font-family="Arial, sans-serif" font-size="68" font-weight="700">AI Brief</text>
+  <text x="80" y="290" fill="#e0f7fa" font-family="Arial, sans-serif" font-size="36">NorthBrief topic image</text>
+</svg>
+

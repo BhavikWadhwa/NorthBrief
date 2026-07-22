@@ -1,0 +1,25 @@
+CATEGORY_DEFINITIONS = [
+    {"code": "local", "label": "Local"},
+    {"code": "canada", "label": "Canada"},
+    {"code": "world", "label": "World"},
+    {"code": "ai", "label": "AI"},
+    {"code": "finance", "label": "Finance"},
+    {"code": "global_finance", "label": "Global Finance"},
+    {"code": "politics", "label": "Politics"},
+    {"code": "war_conflict", "label": "War & Conflict"},
+    {"code": "humanitarian", "label": "Humanitarian"},
+    {"code": "wholesome", "label": "Wholesome"},
+    {"code": "trending", "label": "Trending"},
+]
+
+REGION_DEFINITIONS = [
+    {"code": "ca", "name": "Canada", "region_type": "country", "parent_code": None},
+    {"code": "ca-bc", "name": "British Columbia", "region_type": "province", "parent_code": "ca"},
+    {"code": "ca-on", "name": "Ontario", "region_type": "province", "parent_code": "ca"},
+    {"code": "ca-qc", "name": "Quebec", "region_type": "province", "parent_code": "ca"},
+    {"code": "ca-ab", "name": "Alberta", "region_type": "province", "parent_code": "ca"},
+    {"code": "ca-vancouver", "name": "Vancouver Metro", "region_type": "metro", "parent_code": "ca-bc"},
+    {"code": "ca-toronto", "name": "Toronto Metro", "region_type": "metro", "parent_code": "ca-on"},
+    {"code": "ca-montreal", "name": "Montreal Metro", "region_type": "metro", "parent_code": "ca-qc"},
+    {"code": "global", "name": "Global", "region_type": "global", "parent_code": None},
+]
