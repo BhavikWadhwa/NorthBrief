@@ -19,6 +19,11 @@ NorthBrief solves this by combining preference-based regional and category relev
 - AI: provider abstraction with deterministic local fallback and OpenAI-ready summarization
 - Infrastructure: Docker and Docker Compose
 
+## Deployment
+The repository includes a Render Blueprint for deploying the Next.js frontend, FastAPI backend, and PostgreSQL database. The free deployment uses on-demand web services; the continuous ingestion worker remains available through Docker Compose or can be added as a paid Render worker.
+
+[Deploy to Render](https://render.com/deploy?repo=https://github.com/BhavikWadhwa/NorthBrief)
+
 ## Project Structure
 ```text
 .

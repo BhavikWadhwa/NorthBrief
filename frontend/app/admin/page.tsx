@@ -7,17 +7,7 @@ import { useSession } from "next-auth/react";
 import { AppShell } from "@/components/app-shell";
 import { Button } from "@/components/ui/button";
 import { addSource, getAdminArticles, listSources, triggerIngestion, updateSource } from "@/lib/api";
-import { SourceItem } from "@/lib/types";
-
-interface AdminArticle {
-  processed_article_id: string;
-  raw_article_id: string;
-  headline: string;
-  summary_status: string;
-  quality_flags: string[];
-  category_confidence: number;
-  region_confidence: number;
-}
+import { AdminArticle, SourceItem } from "@/lib/types";
 
 export default function AdminPage() {
   const router = useRouter();
@@ -44,7 +34,7 @@ export default function AdminPage() {
     try {
       setError("");
       const result = await getAdminArticles(data.accessToken);
-      setArticles(result.items as AdminArticle[]);
+      setArticles(result.items);
       const sourceRows = await listSources(data.accessToken);
       setSources(sourceRows);
     } catch (err) {

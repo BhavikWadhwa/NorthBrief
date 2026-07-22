@@ -42,10 +42,12 @@ export default function OnboardingPage() {
   }
 
   async function saveAndContinue(skip = false) {
+    const accessToken = data?.accessToken;
+    if (!accessToken) return;
     setSaving(true);
     setError("");
     try {
-      await updatePreferences(data.accessToken, { ...payload, skip_personalization: skip });
+      await updatePreferences(accessToken, { ...payload, skip_personalization: skip });
       router.push("/feed");
     } catch (err) {
       setError(err instanceof Error ? err.message : "Could not save onboarding preferences.");

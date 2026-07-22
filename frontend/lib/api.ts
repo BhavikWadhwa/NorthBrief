@@ -1,4 +1,4 @@
-import { FeedResponse, PreferencePayload, SourceItem } from "@/lib/types";
+import { AdminArticle, FeedResponse, IngestionRunResponse, PreferencePayload, SourceItem } from "@/lib/types";
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api/v1";
 
@@ -64,11 +64,11 @@ export async function updatePreferences(token: string, payload: PreferencePayloa
 }
 
 export async function triggerIngestion(token: string) {
-  return apiFetch("/admin/ingestion/run", token, { method: "POST" });
+  return apiFetch<IngestionRunResponse>("/admin/ingestion/run", token, { method: "POST" });
 }
 
 export async function getAdminArticles(token: string) {
-  return apiFetch<{ items: Array<Record<string, string | number | string[]>> }>("/admin/articles", token);
+  return apiFetch<{ items: AdminArticle[] }>("/admin/articles", token);
 }
 
 export async function listSources(token: string): Promise<SourceItem[]> {

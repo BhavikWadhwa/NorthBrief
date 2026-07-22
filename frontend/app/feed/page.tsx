@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useSession } from "next-auth/react";
 
@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { createBookmark, getFeed } from "@/lib/api";
 import { FeedItem, FeedTab } from "@/lib/types";
 
-export default function FeedPage() {
+function FeedContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { data, status } = useSession();
@@ -83,5 +83,13 @@ export default function FeedPage() {
         </div>
       </div>
     </AppShell>
+  );
+}
+
+export default function FeedPage() {
+  return (
+    <Suspense fallback={<div className="p-8">Loading your briefing...</div>}>
+      <FeedContent />
+    </Suspense>
   );
 }

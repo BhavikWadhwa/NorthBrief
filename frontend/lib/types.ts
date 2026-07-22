@@ -46,3 +46,21 @@ export interface SourceItem {
   failure_count: number;
 }
 
+export interface AdminArticle {
+  processed_article_id: string;
+  raw_article_id: string;
+  headline: string;
+  summary_status: string;
+  quality_flags: string[];
+  category_confidence: number;
+  region_confidence: number;
+}
+
+export interface IngestionRunResponse {
+  run_id: string;
+  status: string;
+  fetched_count: number;
+  inserted_count: number;
+  deduped_count: number;
+  error_count: number;
+}

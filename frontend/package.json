@@ -15,8 +15,8 @@
     "date-fns": "^4.1.0",
     "framer-motion": "^11.18.2",
     "lucide-react": "^0.469.0",
-    "next": "14.2.24",
-    "next-auth": "^4.24.11",
+    "next": "15.5.18",
+    "next-auth": "^4.24.15",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "tailwind-merge": "^2.6.0",
@@ -30,9 +30,16 @@
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.49",
+    "jsdom": "^29.1.1",
+    "postcss": "^8.5.10",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.3",
     "vitest": "^2.1.8"
+  },
+  "overrides": {
+    "next": {
+      "postcss": "8.5.10",
+      "sharp": "0.35.0"
+    }
   }
 }
