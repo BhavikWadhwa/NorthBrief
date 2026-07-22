@@ -3,6 +3,10 @@
 NorthBrief is a Canada-first, region-aware, source-linked news briefing MVP.  
 It surfaces short AI summaries with clear attribution and outbound links to original publishers.
 
+## Live Demo
+- App: [northbrief-web-bhavik.onrender.com](https://northbrief-web-bhavik.onrender.com)
+- API health: [northbrief-api-bhavik.onrender.com/api/v1/health](https://northbrief-api-bhavik.onrender.com/api/v1/health)
+
 ## Problem Statement
 
 Canadian readers often need to check several national, provincial, city, finance, and global publishers to understand what matters locally. Traditional aggregators can overwhelm readers with duplicate stories, weak regional relevance, and unclear source attribution.
@@ -21,6 +25,8 @@ NorthBrief solves this by combining preference-based regional and category relev
 
 ## Deployment
 The repository includes a Render Blueprint for deploying the Next.js frontend and FastAPI backend. The hosted MVP uses an isolated `northbrief` schema in the workspace PostgreSQL instance; AutoFlow and other schemas remain separate. The free deployment uses on-demand web services, while the continuous ingestion worker remains available through Docker Compose or can be added as a paid Render worker.
+
+Render generates the production admin password as the `ADMIN_PASSWORD` environment variable. The local development seed continues to use the credentials documented below.
 
 [Deploy to Render](https://render.com/deploy?repo=https://github.com/BhavikWadhwa/NorthBrief)
 

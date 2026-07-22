@@ -15,6 +15,8 @@ class Settings(BaseSettings):
     database_schema: str | None = Field(default=None, alias="DB_SCHEMA")
     jwt_secret: str = Field(default="change-me", alias="JWT_SECRET")
     jwt_expire_minutes: int = Field(default=60 * 24 * 7, alias="JWT_EXPIRE_MINUTES")
+    admin_email: str = Field(default="admin@northbrief.local", alias="ADMIN_EMAIL")
+    admin_password: str | None = Field(default=None, alias="ADMIN_PASSWORD")
     openai_api_key: str | None = Field(default=None, alias="OPENAI_API_KEY")
     summarization_provider: str = Field(default="mock", alias="SUMMARIZATION_PROVIDER")
     cors_origins: str = Field(default="http://localhost:3000", alias="CORS_ORIGINS")

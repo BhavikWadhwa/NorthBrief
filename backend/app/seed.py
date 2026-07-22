@@ -1,5 +1,8 @@
+import secrets
+
 from sqlalchemy.orm import Session
 
+from app.core.config import get_settings
 from app.core.security import hash_password
 from app.db.base import Base
 from app.db.session import SessionLocal, engine
@@ -18,17 +21,28 @@ from app.services.bootstrap import ensure_static_data
 
 def seed(db: Session) -> None:
     ensure_static_data(db)
-    admin = db.query(User).filter(User.email == "admin@northbrief.local").first()
-    if not admin:
+    settings = get_settings()
+    admin_password = settings.admin_password
+    if not admin_password and settings.environment == "development":
+        admin_password = "password123"
+
+    admin = db.query(User).filter(User.email == settings.admin_email).first()
+    if admin_password and not admin:
         admin = User(
-            email="admin@northbrief.local",
+            email=settings.admin_email,
             display_name="NorthBrief Admin",
-            password_hash=hash_password("password123"),
+            password_hash=hash_password(admin_password),
             is_admin=True,
         )
         db.add(admin)
         db.flush()
         db.add(UserPreference(user_id=admin.id, province="bc", city="vancouver", category_codes=["local", "canada"]))
+    elif admin_password and admin:
+        admin.password_hash = hash_password(admin_password)
+        admin.is_admin = True
+    elif admin:
+        admin.password_hash = hash_password(secrets.token_urlsafe(32))
+        admin.is_admin = False
 
     existing = db.query(RawArticle).first()
     if existing:
@@ -118,4 +132,3 @@ if __name__ == "__main__":
         seed(session)
     finally:
         session.close()
-

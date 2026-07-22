@@ -21,6 +21,10 @@ services:
         value: https://northbrief-web-bhavik.onrender.com
       - key: JWT_SECRET
         generateValue: true
+      - key: ADMIN_EMAIL
+        value: admin@northbrief.local
+      - key: ADMIN_PASSWORD
+        generateValue: true
       - key: SUMMARIZATION_PROVIDER
         value: mock
 
