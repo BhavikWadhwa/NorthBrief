@@ -20,6 +20,10 @@ class Settings(BaseSettings):
     openai_api_key: str | None = Field(default=None, alias="OPENAI_API_KEY")
     summarization_provider: str = Field(default="mock", alias="SUMMARIZATION_PROVIDER")
     cors_origins: str = Field(default="http://localhost:3000", alias="CORS_ORIGINS")
+    ingest_on_startup: bool = Field(default=False, alias="INGEST_ON_STARTUP")
+    ingestion_startup_min_interval_minutes: int = Field(
+        default=60, alias="INGESTION_STARTUP_MIN_INTERVAL_MINUTES", ge=1
+    )
 
     @property
     def normalized_database_url(self) -> str:

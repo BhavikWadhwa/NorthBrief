@@ -27,6 +27,10 @@ services:
         generateValue: true
       - key: SUMMARIZATION_PROVIDER
         value: mock
+      - key: INGEST_ON_STARTUP
+        value: true
+      - key: INGESTION_STARTUP_MIN_INTERVAL_MINUTES
+        value: 60
 
   - type: web
     name: northbrief-web-bhavik

@@ -159,6 +159,126 @@
       "default_category_code": "ai",
       "priority": 0.8,
       "is_active": true
+    },
+    {
+      "name": "Global News BC",
+      "source_type": "rss",
+      "feed_url": "https://globalnews.ca/bc/feed/",
+      "site_url": "https://globalnews.ca/bc/",
+      "default_region_code": "ca-bc",
+      "default_category_code": "local",
+      "priority": 0.94,
+      "is_active": true
+    },
+    {
+      "name": "Global News Calgary",
+      "source_type": "rss",
+      "feed_url": "https://globalnews.ca/calgary/feed/",
+      "site_url": "https://globalnews.ca/calgary/",
+      "default_region_code": "ca-calgary",
+      "default_category_code": "local",
+      "priority": 0.93,
+      "is_active": true
+    },
+    {
+      "name": "Global News Edmonton",
+      "source_type": "rss",
+      "feed_url": "https://globalnews.ca/edmonton/feed/",
+      "site_url": "https://globalnews.ca/edmonton/",
+      "default_region_code": "ca-edmonton",
+      "default_category_code": "local",
+      "priority": 0.92,
+      "is_active": true
+    },
+    {
+      "name": "Global News Halifax",
+      "source_type": "rss",
+      "feed_url": "https://globalnews.ca/halifax/feed/",
+      "site_url": "https://globalnews.ca/halifax/",
+      "default_region_code": "ca-ns",
+      "default_category_code": "local",
+      "priority": 0.9,
+      "is_active": true
+    },
+    {
+      "name": "Global News Montreal",
+      "source_type": "rss",
+      "feed_url": "https://globalnews.ca/montreal/feed/",
+      "site_url": "https://globalnews.ca/montreal/",
+      "default_region_code": "ca-montreal",
+      "default_category_code": "local",
+      "priority": 0.92,
+      "is_active": true
+    },
+    {
+      "name": "Global News Ottawa",
+      "source_type": "rss",
+      "feed_url": "https://globalnews.ca/ottawa/feed/",
+      "site_url": "https://globalnews.ca/ottawa/",
+      "default_region_code": "ca-ottawa",
+      "default_category_code": "local",
+      "priority": 0.92,
+      "is_active": true
+    },
+    {
+      "name": "Global News Toronto",
+      "source_type": "rss",
+      "feed_url": "https://globalnews.ca/toronto/feed/",
+      "site_url": "https://globalnews.ca/toronto/",
+      "default_region_code": "ca-toronto",
+      "default_category_code": "local",
+      "priority": 0.93,
+      "is_active": true
+    },
+    {
+      "name": "Global News Winnipeg",
+      "source_type": "rss",
+      "feed_url": "https://globalnews.ca/winnipeg/feed/",
+      "site_url": "https://globalnews.ca/winnipeg/",
+      "default_region_code": "ca-mb",
+      "default_category_code": "local",
+      "priority": 0.9,
+      "is_active": true
+    },
+    {
+      "name": "Global News Politics",
+      "source_type": "rss",
+      "feed_url": "https://globalnews.ca/politics/feed/",
+      "site_url": "https://globalnews.ca/politics/",
+      "default_region_code": "ca",
+      "default_category_code": "politics",
+      "priority": 0.91,
+      "is_active": true
+    },
+    {
+      "name": "Global News Money",
+      "source_type": "rss",
+      "feed_url": "https://globalnews.ca/money/feed/",
+      "site_url": "https://globalnews.ca/money/",
+      "default_region_code": "ca",
+      "default_category_code": "finance",
+      "priority": 0.89,
+      "is_active": true
+    },
+    {
+      "name": "Government of Canada News",
+      "source_type": "rss",
+      "feed_url": "https://api.io.canada.ca/io-server/gc/news/en/v2?atomtitle=National%20News&format=atom&orderBy=desc&pick=100&sort=publishedDate",
+      "site_url": "https://www.canada.ca/en/news.html",
+      "default_region_code": "ca",
+      "default_category_code": "canada",
+      "priority": 0.94,
+      "is_active": true
+    },
+    {
+      "name": "Statistics Canada The Daily",
+      "source_type": "rss",
+      "feed_url": "https://www150.statcan.gc.ca/n1/rss/dai-quo/0-eng.atom",
+      "site_url": "https://www.statcan.gc.ca/en/dai-quo",
+      "default_region_code": "ca",
+      "default_category_code": "finance",
+      "priority": 0.91,
+      "is_active": true
     }
   ]
 }

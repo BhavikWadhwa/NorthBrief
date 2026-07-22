@@ -45,6 +45,8 @@ def sync_sources(db: Session) -> None:
             current.site_url = str(source.site_url) if source.site_url else None
             current.default_region_code = source.default_region_code
             current.default_category_code = source.default_category_code
+            current.priority = source.priority
+            current.is_active = source.is_active
         else:
             db.add(
                 NewsSource(
