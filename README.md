@@ -20,7 +20,7 @@ NorthBrief solves this by combining preference-based regional and category relev
 - Infrastructure: Docker and Docker Compose
 
 ## Deployment
-The repository includes a Render Blueprint for deploying the Next.js frontend, FastAPI backend, and PostgreSQL database. The free deployment uses on-demand web services; the continuous ingestion worker remains available through Docker Compose or can be added as a paid Render worker.
+The repository includes a Render Blueprint for deploying the Next.js frontend and FastAPI backend. The hosted MVP uses an isolated `northbrief` schema in the workspace PostgreSQL instance; AutoFlow and other schemas remain separate. The free deployment uses on-demand web services, while the continuous ingestion worker remains available through Docker Compose or can be added as a paid Render worker.
 
 [Deploy to Render](https://render.com/deploy?repo=https://github.com/BhavikWadhwa/NorthBrief)
 

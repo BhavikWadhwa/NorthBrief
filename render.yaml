@@ -1,9 +1,3 @@
-databases:
-  - name: northbrief-db-bhavik
-    databaseName: northbrief
-    user: northbrief
-    plan: free
-
 services:
   - type: web
     name: northbrief-api-bhavik
@@ -12,13 +6,15 @@ services:
     rootDir: backend
     dockerfilePath: ./Dockerfile
     dockerContext: .
-    dockerCommand: sh -c "alembic upgrade head && python -m app.seed && uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    dockerCommand: sh -c "python -m app.db.prepare && alembic upgrade head && python -m app.seed && uvicorn app.main:app --host 0.0.0.0 --port $PORT"
     healthCheckPath: /api/v1/health
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: northbrief-db-bhavik
+          name: autoflow-database
           property: connectionString
+      - key: DB_SCHEMA
+        value: northbrief
       - key: ENVIRONMENT
         value: production
       - key: CORS_ORIGINS
